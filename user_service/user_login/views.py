@@ -1,8 +1,12 @@
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.decorators import action
-# from .models import User, FullName, Address, Account
-from user_model.serializers import UserSerializer, FullNameSerializer, AddressSerializer, AccountSerializer,LoginSerializer
+
+from user_model.serializers import (
+    UserSerializer,
+    LoginSerializer,
+)
+
 
 # Create your views here.
 class LoginView(viewsets.ViewSet):

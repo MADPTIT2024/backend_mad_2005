@@ -4,6 +4,7 @@ from rest_framework.views import APIView
 from .models import Order
 from .serializers import OrderSerializer
 
+
 class OrderCreateAPIView(APIView):
     def post(self, request, *args, **kwargs):
         serializer = OrderSerializer(data=request.data)

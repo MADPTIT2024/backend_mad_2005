@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 class Order(models.Model):
     user_id = models.IntegerField(null=True, default=None)
     date = models.DateTimeField(blank=True, null=True, default=timezone.now)
@@ -19,10 +20,3 @@ class OrderItem(models.Model):
 
     def __str__(self):
         return str(self.id)
-
-
-
-
-
-
-

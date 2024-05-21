@@ -4,8 +4,8 @@ from .views import LoginView
 
 router = DefaultRouter()
 # router.register(r'users', UserViewSet)
-router.register(r'login', LoginView, basename='login')
+router.register(r"login", LoginView, basename="login")
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path("", include(router.urls)),
 ]

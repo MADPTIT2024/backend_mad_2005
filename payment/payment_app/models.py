@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 # Create your models here.
 class Payment(models.Model):
     user_id = models.IntegerField(null=True, default=None)
